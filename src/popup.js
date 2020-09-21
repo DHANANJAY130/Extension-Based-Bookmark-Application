@@ -5,11 +5,11 @@ $("#sbmt").click(function(){
 });
 chrome.tabs.getSelected(null,function(tab) {
 
-    $("#T1").val(tab.url)
-    $("#url1").val(tab.title)
+    $("#T1").val(tab.title)
+    $("#url1").val(tab.url)
     $("#browsers").val("Chrome")
 });
-var url = $("#T1").val();
-var title = $("#url1").val();
+var title = $("#T1").val();
+var url = $("#url1").val();
 
 });
